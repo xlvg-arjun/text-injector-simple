@@ -1,0 +1,24 @@
+{
+  "name": "text-injector-simple",
+  "version": "0.0.1",
+  "description": "A simple text injector",
+  "source": true,
+  "main": "libs/bundle.js",
+  "bundle": "libs/bundle.es.js",
+  "types": "libs/index.d.ts",
+  "scripts": {
+    "rollup": "rollup --config rollup.config.js",
+    "prepublish": "rm -rf libs && npm run rollup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arjun Raju Pillai<revarjunr@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.1",
+    "rollup": "^2.16.1",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "typescript": "^3.9.5"
+  }
+}
